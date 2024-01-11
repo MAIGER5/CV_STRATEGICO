@@ -1,0 +1,72 @@
+.contenedor {
+
+}
+
+#menuInicio {
+    background-color: #CED7DD;
+    transition: background-color 0.5s;
+    color: #212529;
+    text-decoration: none;
+
+}
+
+.menuOtros{
+    background-color: none;
+    color: #CED7DD;
+    transition: background-color 0.5s;
+    text-decoration: none;
+}
+
+.menuColor{
+    color: #CED7DD;
+    font-weight: 400;
+}
+
+.contact{
+    background-color: none;
+    text-decoration: none;
+    transition: background-color 0.5s;
+
+}
+
+#menuInicio:hover, .menuOtros:hover, .contact:hover, .menuColor:hover{
+    background-color: #212529;
+    color: #CED7DD;
+
+}
+#menuInicio:hover .inicio, .contact{
+    color: #CED7DD;
+}
+
+
+.iconRedSocial{
+
+    color: #CED7DD;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+
+.iconRedSocial:hover {
+    color: #212529;
+    transform: scale(1.4);
+}
+
+
+@media only screen and (min-width:990px) {
+
+    .contenedor {
+        height: 55px;
+    }
+}
+
+/******************COMPONENTE navbarTop*****************************************/
+
+.logoScale img {
+    transition: transform 0.4s;
+}
+
+.logoScale:hover img{
+    transform: scale(0.9);
+}

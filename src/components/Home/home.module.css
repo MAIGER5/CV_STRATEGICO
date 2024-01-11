@@ -1,0 +1,82 @@
+/**** componente consultoria home ********/
+
+.contactBoton:hover{
+    background-color: #55A630;
+}
+
+
+
+
+
+/*************Componente imgPortada *********************/
+
+.impPortada{
+    position: relative;
+    width: 100%;
+    height: 590px;
+    background:  url('../../Media/home1.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.impPortada::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  linear-gradient(to right, rgba(216, 226, 224, 0.7)50%, transparent);
+}
+
+.impPortada .exception {
+    position: relative;
+}
+
+.efectoBoton {
+    background: #212529;
+}
+.efectoBoton:hover {
+    background: #4F6D7A;
+}
+
+
+
+/**** componente Bienvenido home ********/
+
+.Bienvenido{
+    margin-top: 70px;
+}
+
+
+/**** componente card1x3 home ********/
+
+.Card1x3 {
+
+}
+
+
+.cardEfect:hover{
+    transition: transform 0.8s;
+}
+
+.cardEfect:hover{
+    transform: scale(1.03);
+}
+
+
+@media screen and (min-width: 990px) {
+    .Card1x3 {
+      position: absolute;
+      top: 450px;
+      /* Otros estilos específicos para pantallas en el rango de 600px a 990px si es necesario */
+    }
+
+    .Bienvenido {
+        margin-top: 240px;
+    }
+  }

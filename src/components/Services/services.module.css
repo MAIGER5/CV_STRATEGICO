@@ -1,0 +1,122 @@
+
+/*************Componente imgPortada *********************/
+
+.impPortada{
+    position: relative;
+    width: 100%;
+    height: 590px;
+    background:  url('../../Media/services.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.impPortada::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  linear-gradient(to right, rgba(216, 226, 224, 0.7)50%, transparent);
+}
+
+.impPortada .exception {
+    position: relative;
+}
+
+.efectoBoton {
+    background: #212529;
+}
+.efectoBoton:hover {
+    background: #4F6D7A;
+}
+
+
+.exceptionTexto {
+    font-size: 37px;
+    text-wrap: balance;
+}
+
+@media screen and (max-width: 990px) {
+    .exceptionTexto {
+        font-size: 29px;
+    }
+}
+
+/*************Componente Products *********************/
+
+.Product_img1{
+    background: url('../../Media/mina1.jpg');
+}
+.Product_img2{
+    background: url('../../Media/mina2.jpg');
+}
+.Product_img3{
+    background: url('../../Media/mina3.jpg');
+}
+
+
+.Product_filter_img{
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.Product_filter_img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(65, 50, 50, 0.3);
+}
+
+.Product_filter_img .excluido{
+    position: relative;
+}
+
+
+.ul {
+    list-style: none;
+}
+
+
+/*************Componente cardX3 *********************/
+
+/* .imgCard{
+    position: relative;
+    height: 300px;
+    background: url('../../Media/mina.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgCard::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.imgCard .excluido{
+    position: relative;
+    z-index: 1;
+} */

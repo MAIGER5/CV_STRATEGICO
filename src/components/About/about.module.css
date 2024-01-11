@@ -1,0 +1,77 @@
+
+
+.contactBoton{
+    background-color: #55A630;
+}
+
+.contactBoton:hover{
+    background-color: #212529;
+}
+
+/*************Componente imgPortad *********************/
+
+.impPortada{
+    position: relative;
+    width: 100%;
+    height: 590px;
+    background:  url('../../Media/mina.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.impPortada::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  linear-gradient(to right, rgba(103, 109, 108, 0.5)50%, transparent);
+}
+
+.CardTextPortada {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.impPortada .exception {
+    position: relative;
+}
+
+.exceptionTitle {
+    font-size: 35px;
+    width: 50%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .exceptionTitle {
+        font-size: 20px;
+        width: 90%;
+    }
+    .CardTextPortada {
+        margin-left: 50;
+    }
+}
+@media screen and (min-width: 450px) and (max-width: 770px) {
+    .exceptionTitle {
+        width: 75%;
+    }
+
+}
+
+
+.efectoBoton {
+    background: #212529;
+    color: #CED7DD;
+    letter-spacing: 1px;
+}
+.efectoBoton:hover {
+    background: #CED7DD;
+    color: #212529;
+}
